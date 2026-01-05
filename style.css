@@ -19,18 +19,33 @@
     padding: 18px 36px;
     font-size: 20px;
 }
-.btn-orange:hover {
+.btn-white:hover, .btn-orange:hover {
     cursor: pointer;
+}
+.btn-white {
+    color: #FD6E0A;
+    background-color: #FFF8F3;
+    padding: 19px 24px;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+}
+.banner-content div {
+    display: flex;
+    gap: 30px;
 }
 
 /* content */
+/* header */
 .logo {
     font-size: 45px;
     font-weight: 900;
 }
 header {
-    background-color: #FFF8F3;
+    background-color: #FFF8F3;  /* its now over-write */
     padding-top: 50px;
+    background: url("images/developer.png"), url("images/header_bg.png"), #FFF8F3;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
 }
 nav {
     width: 71%;
@@ -49,4 +64,37 @@ nav {
     font-size: 20px;
     color: #474747;
     text-decoration: none;
+}
+
+#banner {
+    margin: 46px 38px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content {
+    max-width: 585px;
+    /* height: 356px; */
+}
+.banner-content h2 {
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.banner-content h1 {
+    color: #181818;
+    font-size: 85px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.banner-content p {
+    color: #757575;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.banner-image img {
+    max-width: 584px;
+    vertical-align: middle;
 }
